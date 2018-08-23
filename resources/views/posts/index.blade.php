@@ -4,7 +4,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				@if(count($posts) > 1)
+				@if(count($posts) > 0)
 					@foreach($posts as $post)
 					<div class="card">
 				  		<div class="card-body">
@@ -13,6 +13,7 @@
 				  		</div>
 					</div>
 					@endforeach
+					{{ $post->links() }}
 				@else
 					<div class="alert-danger alert">No posts found</div>
 				@endif
