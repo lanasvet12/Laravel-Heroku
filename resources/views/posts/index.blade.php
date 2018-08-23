@@ -4,16 +4,20 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<h1>Posts</h1>		
 				@if(count($posts) > 1)
 					@foreach($posts as $post)
-					<div class="well">
-						<h3>{{ $post->title }}</h3>
+					<div class="card">
+				  		<div class="card-body">
+				    		<h5 class="card-title">{{ $post->title }}</h5>
+				    		<p class="card-text">{{ $post->body }}</p>
+				  		</div>
 					</div>
 					@endforeach
 				@else
-					<p>No posts found</p>
+					<div class="alert-danger alert">No posts found</div>
 				@endif
+				
+				
 			</div>
 		</div>
 	</div>
