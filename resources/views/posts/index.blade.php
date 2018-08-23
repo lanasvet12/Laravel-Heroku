@@ -8,7 +8,7 @@
 					@foreach($posts as $post)
 					<div class="card">
 				  		<div class="card-body">
-				    		<h5 class="card-title"><a href="/posts/{{$post->id}}"></a>{{ $post->title }}</h5>
+				    		<h5 class="card-title"><a href="/posts/{{$post->id}}">{{ $post->title }}</a></h5>
 				    		<p class="card-text">{{ $post->body }}</p>
 				  		</div>
 					</div>
