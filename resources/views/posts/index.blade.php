@@ -13,7 +13,7 @@
 				  		</div>
 					</div>
 					@endforeach
-					{{ $post->links() }}
+					{{ $posts->links() }}
 				@else
 					<div class="alert-danger alert">No posts found</div>
 				@endif
