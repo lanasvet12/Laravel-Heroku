@@ -19,7 +19,7 @@
             <a class="nav-link" href="/about">About us</a>
           </li>
         </ul>
-        <a class="mr-auto navbar-text" href="/posts/create">Create Post</a>
+        <a class="mr-auto navbar-text nav-link" href="/posts/create">Create Post</a>
       </div>
   </nav>
 </header>
