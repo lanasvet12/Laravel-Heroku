@@ -18,7 +18,6 @@ class PostsController extends Controller
     public function __construct()
     {
         $this->middleware('auth', ['except' => ['index', 'show']]);
-        App::make('files')->link(storage_path('app/public'), public_path('storage'));
     }
 
     /**
