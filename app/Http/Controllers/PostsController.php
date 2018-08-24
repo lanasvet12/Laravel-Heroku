@@ -65,7 +65,7 @@ class PostsController extends Controller
             // Upload image
             $path = $request->file('cover_image')->storeAs('public/cover_images', $fileNameToStore);
         } else {
-            $fileNameToStore = 'noimage.jpg'
+            $fileNameToStore = 'noimage.jpg';
         }
 
         $post = new Post;
@@ -73,7 +73,7 @@ class PostsController extends Controller
         $post->body = $request->input('body');
         $post->user_id = auth()->user()->id;
         $post->cover_image = $fileNameToStore;
-        
+
         $post->save();
 
         return redirect('/posts')->with('success', 'Post Created');
