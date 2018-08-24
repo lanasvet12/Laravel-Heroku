@@ -19,6 +19,9 @@
             <a class="nav-link" href="/about">About us</a>
           </li>
         </ul>
+        <ul class="navbar-nav navbar-right mr-auto">
+          <li><a href="/posts/create">Create Post</a></li>
+        </ul>
       </div>
   </nav>
 </header>
