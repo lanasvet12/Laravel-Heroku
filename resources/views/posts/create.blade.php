@@ -5,7 +5,7 @@
 		<div class="row">
 			<div class="col-12">
 				<h1>Create Post</h1>
-				{!! Form::open(['action' => 'PostsController@store', 'method' => 'POST']) !!}
+				{!! Form::open(['action' => 'PostsController@store', 'method' => 'POST', 'enctype' => 'multipart/data']) !!}
 				<? echo Form::token(); ?>
 
 			    <div class="form-group">
@@ -15,6 +15,9 @@
 			    <div class="form-group">
 			    	{{ Form::label('body', 'Body') }}
 			    	{{ Form::textarea('body', '', ['id' => 'article-ckeditor','class' => 'form-control', 'placeholder' => 'Input body post'])}}
+			    </div>
+			    <div class="form-group">
+			    	{{ Form::file('cover_image') }}
 			    </div>
 			    {{ Form::submit('Submit', ['class' => 'btn btn-primary']) }}
 				{!! Form::close() !!}
