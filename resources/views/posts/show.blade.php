@@ -7,6 +7,7 @@
 				<a class="btn btn-default" href="/posts">Go back</a>
 				<h1 class="text-center">{{ $post->title }}</h1>
 				<p>{!! $post->body !!}</p>
+				<small>Created by {{ $post->user->name }}</small>
 				<hr>
 				<a href="/posts/{{$post->id}}/edit" class="btn btn-primary">Edit post</a>
 				{!! Form::open(['action' => ['PostsController@destroy', $post->id], 'method' => 'POST', 'class' => 'pull-right']) !!}

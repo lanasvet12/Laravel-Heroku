@@ -10,6 +10,7 @@
 				  		<div class="card-body">
 				    		<h5 class="card-title"><a href="/posts/{{$post->id}}">{{ $post->title }}</a></h5>
 				    		<p class="card-text">{!! $post->body !!}</p>
+				    		<small>Created by {{ $post->user->name }}</small>
 				  		</div>
 					</div>
 					@endforeach
