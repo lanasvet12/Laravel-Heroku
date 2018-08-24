@@ -8,13 +8,13 @@
 				{!! Form::open(['action' => 'PostsController@shore', 'method' => 'POST']) !!}
 			    <div class="form-group">
 			    	{{ Form::label('title', 'Title') }}
-			    	{{ Form::text('title', '', [class => 'form-control', 'placeholder' => 'Input title post'])}}
+			    	{{ Form::text('title', '', ['class' => 'form-control', 'placeholder' => 'Input title post'])}}
 			    </div>
 			    <div class="form-group">
 			    	{{ Form::label('body', 'Body') }}
-			    	{{ Form::textarea('body', '', [class => 'form-control', 'placeholder' => 'Input body post'])}}
+			    	{{ Form::textarea('body', '', ['class' => 'form-control', 'placeholder' => 'Input body post'])}}
 			    </div>
-			    {{ Form::submit('Submit', [class => 'btn btn-primary']) }}
+			    {{ Form::submit('Submit', ['class' => 'btn btn-primary']) }}
 				{!! Form::close() !!}
 			</div>
 		</div>
