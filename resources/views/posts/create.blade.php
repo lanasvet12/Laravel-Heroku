@@ -5,7 +5,7 @@
 		<div class="row">
 			<div class="col-12">
 				<h1>Create Post</h1>
-				{!! Form::open(['action' => 'PostsController@store', 'method' => 'POST', 'enctype' => 'multipart/data']) !!}
+				{!! Form::open(['action' => 'PostsController@store', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
 				<? echo Form::token(); ?>
 
 			    <div class="form-group">
