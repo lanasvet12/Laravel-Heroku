@@ -6,7 +6,7 @@
 			<div class="col-12">
 				<a class="btn btn-default" href="/posts">Go back</a>
 				<h1 class="text-center">{{ $post->title }}</h1>
-				<img src="{{ $post->cover_image }}">
+				<img src="public/cover_image/{{ $post->cover_image }}">
 				<p>{!! $post->body !!}</p>
 				<small>Created by {{ $post->user->name }}</small>
 				<hr>
